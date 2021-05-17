@@ -1,46 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Conoce_tu_futuro!"
-        android:textColor="6633FF"
-        android:textSize="30dp"
-        android:textStyle="bold|italic"
-        android:layout_margin="40dp" />
 
-    <EditText
-        android:id="@+id/question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="24sp"
-        android:hint="ESCRIBE TU MENSAJE"
-        android:inputType="textShortMessage" />
 
-    <ImageButton
-        android:id="@+id/btn"
-        android:layout_width="303dp"
-        android:layout_height="160dp"
-        android:layout_gravity="center"
-        android:layout_margin="40dp"
-        android:src="@drawable/ballimage" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="33F3FF"
-        android:layout_margin="60dp" />
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="@drawable/ballimage">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:text="Averigua como le ira a tu pais en la copa mundial!"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#0000FF"
+            android:textStyle="bold|italic" />
+
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="196dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:hint="   Ingresa tu pais"
+            android:inputType="textShortMessage"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:text="         "
+
+            android:textSize="10dp"
+
+            android:textStyle="bold|italic" />
+
+        <ImageButton
+            android:id="@+id/btn"
+            android:layout_width="151dp"
+            android:layout_height="113dp"
+            android:layout_gravity="center"
+            android:background="@drawable/telstar"
+            android:inputType="textShortMessage"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/respuestavista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="60dp"
+            android:text="..."
+            android:textColor="#33F3FF"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
